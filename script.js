@@ -1,0 +1,129 @@
+var x=2,i,hostbit,h,result,n,a;
+        var num, binary_num, decimal_num = 0, base = 1, rem;
+        const ba=[255,0,0,0];
+        const bb=[255,255,0,0];
+        const bc=[255,255,255,0];
+        
+        function check(){
+            var cls = document.getElementById("frm1").elements[0].value.toLowerCase();
+            var req = document.getElementById("frm1").elements[1].value;
+            if(cls=="a"){
+              const b=[0,0,0,0];
+                for(let i=1;i<=100;i++){
+                  var result = (x**i)-2;
+                  if(result>=req){
+                    hostbit = 24;
+                    b[0]=ba[0];
+                    b[1]=ba[1];
+                    b[2]=ba[2];
+                    b[3]=ba[3];
+                    var netbit = hostbit - i;
+                    const ar=[];
+                    for(let i=0;i<24;i++){
+                      if(netbit!=0){
+                        ar[i]=1;
+                        netbit--;
+                      }
+                      else{
+                        ar[i]=0;
+                      }
+                    }
+                    var j=k=i=0;
+                    var num=binary_num=decimal_num=rem=0;
+                    for (i = 0; i < 8; i++){
+                      k = (10*k) + ar[i];
+                    }
+                    num = k;
+                    var j=k=i=0;
+                    for (i = 8; i < 16; i++){
+                      k = (10*k) + ar[i];
+                    }                    
+                    num2 = k;
+                    var j=k=i=0;
+                    for (i = 16; i < 24; i++){
+                      k = (10*k) + ar[i];
+                    }                    
+                    num3 = k;
+                    document.getElementById("b0").innerHTML = b[0] + ".";
+                    document.getElementById("b1").innerHTML = parseInt(num,2) + ".";
+                    document.getElementById("b2").innerHTML = parseInt(num2,2) + ".";  
+                    document.getElementById("b3").innerHTML = parseInt(num3,2);  
+                    break;
+                  }
+                }
+            }
+            if(cls=="b"){
+              const b=[0,0,0,0];
+                for(let i=1;i<=100;i++){
+                  var result = (x**i)-2;
+                  if(result>=req){
+                    hostbit = 16;
+                    b[0]=bb[0];
+                    b[1]=bb[1];
+                    b[2]=bb[2];
+                    b[3]=bb[3];
+                    var netbit = hostbit - i;
+                    const ar=[];
+                    for(let i=0;i<16;i++){
+                      if(netbit!=0){
+                        ar[i]=1;
+                        netbit--;
+                      }
+                      else{
+                        ar[i]=0;
+                      }
+                    }
+                    var j=k=i=0;
+                    var num=binary_num=decimal_num=rem=0;
+                    for (i = 0; i < 8; i++){
+                      k = (10*k) + ar[i];
+                    }
+                    num = k;
+                    var j=k=i=0;
+                    for (i = 8; i < 16; i++){
+                      k = (10*k) + ar[i];
+                    }                    
+                    num2 = k;
+                    document.getElementById("b0").innerHTML = b[0] + ".";
+                    document.getElementById("b1").innerHTML = b[1] + ".";
+                    document.getElementById("b2").innerHTML = parseInt(num, 2) + ".";  
+                    document.getElementById("b3").innerHTML = parseInt(num2, 2);  
+                    break;
+                  }
+                }
+            }
+            if(cls=="c"){
+              const b=[0,0,0,0];
+                for(let i=1;i<=100;i++){
+                  var result = (x**i)-2;
+                  if(result>=req){
+                    hostbit = 8;
+                    b[0]=bc[0];
+                    b[1]=bc[1];
+                    b[2]=bc[2];
+                    b[3]=bc[3];
+                    var netbit = hostbit - i;
+                    const ar=[];
+                    for(let i=0;i<8;i++){
+                      if(netbit!=0){
+                        ar[i]=1;
+                        netbit--;
+                      }
+                      else{
+                        ar[i]=0;
+                      }
+                    }
+                    var j=k=i=0;
+                    for (i = 0; i < 8; i++){
+                      k = (10*k) + ar[i];
+                    }
+                    num=k;
+                    document.getElementById("b0").innerHTML = b[0] + ".";
+                    document.getElementById("b1").innerHTML = b[1] + ".";
+                    document.getElementById("b2").innerHTML = b[2] + ".";  
+                    document.getElementById("b3").innerHTML = parseInt(num, 2);
+                    break;
+                  }
+                }
+            }
+        }
