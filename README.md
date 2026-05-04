@@ -22,18 +22,13 @@ Engineer with experience building production-grade applications across mobile, A
 
 ## GitHub Activity
 
-## GitHub Activity
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JahnviAghera&show_icons=true&theme=default&hide_border=true&cache_seconds=1800" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JahnviAghera" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=JahnviAghera&theme=default&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JahnviAghera&layout=compact&hide_border=true&cache_seconds=1800" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JahnviAghera" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=JahnviAghera" />
 </p>
 
 ---
